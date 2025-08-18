@@ -29,9 +29,9 @@ async function onFormSubmit(e) {
   }
 
   clearGallery();
-  showLoader();
 
   try {
+    showLoader();
     const data = await getImagesByQuery(query);
 
     if (!data.hits || data.hits.length === 0) {

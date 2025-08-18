@@ -51,18 +51,20 @@
 
 /* Loader styles */
 
-.hidden {
-  display: none;
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ddd;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+
+  position: fixed;
+  left: 50%;
 }
 
-.loader {
-  margin: 24px auto;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 8px solid #eee;
-  border-top: 8px solid #4e75ff;
-  animation: spin 1s linear infinite;
+.hidden {
+  display: none;
 }
 
 @keyframes spin {

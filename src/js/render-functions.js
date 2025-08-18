@@ -20,10 +20,12 @@ export function clearGallery() {
 
 export function showLoader() {
   refs.loader.classList.remove('hidden');
+  refs.loader.setAttribute('aria-hidden', 'false');
 }
 
 export function hideLoader() {
   refs.loader.classList.add('hidden');
+  refs.loader.setAttribute('aria-hidden', 'true');
 }
 
 function cardTemplate({
